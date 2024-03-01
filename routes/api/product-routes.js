@@ -103,6 +103,7 @@ router.put('/:id', async (req, res) => {
     });
 });
 
+// API endpoint to delete/DESTROY a product
 router.delete('/:id', async (req, res) => {
   try {
     const productData = await Product.destroy({
